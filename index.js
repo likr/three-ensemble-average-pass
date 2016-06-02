@@ -41,8 +41,8 @@ class EnsembleAveragePass {
       EnsembleAveragePass.sceneBuffer = readBuffer.clone() // XXX
     }
     renderer.render(this.scene, this.camera, EnsembleAveragePass.sceneBuffer, true)
-    this.uniforms.accBuffer.value = readBuffer
-    this.uniforms.newBuffer.value = EnsembleAveragePass.sceneBuffer
+    this.uniforms.accBuffer.value = readBuffer.texture
+    this.uniforms.newBuffer.value = EnsembleAveragePass.sceneBuffer.texture
     EffectComposer.quad.material = this.material
     if (this.renderToScreen) {
       renderer.render(EffectComposer.scene, EffectComposer.camera)
