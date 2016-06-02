@@ -1,6 +1,6 @@
 {
   "name": "three-ensemble-average-pass",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "EnsembleAveragePass for three.js and three-effectcomposer.",
   "main": "index.js",
   "files": [
